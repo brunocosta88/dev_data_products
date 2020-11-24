@@ -35,7 +35,7 @@ shinyServer(function(input, output) {
             else if (length(x > 0)) form <- paste(y," ~ ", x_axis, " + ", x1 )
             else form <- paste(y," ~ ", x_axis)
             
-            print(form)
+            #print(form)
             
             fit <- lm(form, data = mtcars)
             #print(summary(fit))
@@ -50,8 +50,7 @@ shinyServer(function(input, output) {
             
             f <- list(
                 family = "Courier New, monospace",
-                size = 18,
-                color = "#7f7f7f"
+                size = 18
             )
             xax <- list(
                 title = x_axis,

@@ -6,7 +6,7 @@
 #
 #    http://shiny.rstudio.com/
 #
-
+library(plotly)
 library(shiny)
 data(mtcars)
 variables <- names(mtcars)
